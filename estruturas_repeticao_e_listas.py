@@ -41,3 +41,13 @@ numeros = [1,2,3,4,5,6,7,8,9]
 numeros = list(range(1, 50, 2))
 print(numeros)
 
+# 06. Faça um programa que recebe um número de 1 a 10 do usuário e imprime a tabuada de multiplicação desse número.
+
+num = int(input('Digite um número de 1 a 10: '))
+if num <= 0 or num >= 11:
+    print('Digite um número correto')
+else:
+    for multi in range(1, 11):
+        print(f'{num} x {multi} =', num*multi)
+        
+        
