@@ -57,6 +57,14 @@ if a != 0:
         if d > 0:
             x2 = (-b - d**(1/2)) / (2*a)
             print(f"x'' = {x1}")
+            
+# 04. Faça um Programa que peça um número correspondente a um determinado ano e em seguida informe se este ano é ou não bissexto.
+
+ano = int(input('Digite o ano: '))
+if ano%4 == 0 and ano%100 != 0 or ano%400 == 0:
+    print(f'{ano} é um ano bissexto')
+else:
+    print(f'{ano} não é um ano bissexto')
 
 # 05. Faça um Programa que peça uma data no formato dd/mm/aaaa e determine se a mesma é uma data válida.
 
