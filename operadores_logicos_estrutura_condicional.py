@@ -61,21 +61,15 @@ if a != 0:
 # 05. Faça um Programa que peça uma data no formato dd/mm/aaaa e determine se a mesma é uma data válida.
 
 dia = int(input('Digite o dia: '))
-if dia <= 0:
-    print('Dia inválido')
-elif dia > 31:
+if dia <= 0 or dia > 31:
     print('Dia inválido')
 else:
     mes = int(input('Digite o mês: '))
-    if mes <= 0:
-        print('Mês inválido')
-    elif mes > 12:
+    if mes <= 0 or mes > 12:
         print('Mês inválido')
     else:
         ano = int(input('Digite o ano: '))
-        if ano <= 0000:
-            print('Ano inválido')
-        elif ano > 2023:
+        if ano <= 0 or ano > 2099:
             print('Ano inválido')
         else:
             print(f'{dia}/{mes}/{ano} é uma data válida')
