@@ -102,3 +102,14 @@ elif num == 7:
     print('Sábado')
 else:
     print('Dia inválido')
+    
+# 08. Faça um código para imprimir uma mensagem informando se um aluno foi aprovado ou reprovado em uma disciplina com base em sua nota final.
+# A nota mínima necessária para aprovação é 5.
+
+nota = int(input('Digite a nota do aluno: '))
+if nota >= 5 and nota <= 10:
+    print('Aluno Aprovado')
+elif nota > 10:
+    print('Digite uma nota válida')
+else:
+    print('Aluno Reprovado')
