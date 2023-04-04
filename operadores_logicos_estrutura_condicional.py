@@ -33,6 +33,31 @@ a = 3
 b = 15
 4*3 + 3 == b # True
 
+'''
+03. Faça um programa que calcule as raízes de uma equação do segundo grau, na forma ax² + bx + c. O programa deverá pedir os valores de a, b e c e fazer as consistências, informando ao usuário nas seguintes situações:
+a) Se o usuário informar o valor de A igual a zero, a equação não é do segundo grau e o programa não deve pedir os demais valores, sendo encerrado;
+
+b) Se o delta calculado for negativo, a equação não possui raizes reais. Informe ao usuário e encerre o programa;
+c) Se o delta calculado for igual a zero a equação possui apenas uma raiz real; informe-a ao usuário;
+d) Se o delta for positivo, a equação possui duas raiz reais; informe-as ao usuário;
+'''
+
+import math
+a = int(input('Digite o valor de a: '))
+if a != 0:
+    b = int(input('Digite o valor de b: '))
+    c = int(input('Digite o valor de c: '))
+
+    d = b**2 - 4*a*c
+    if d < 0:
+        print('O valor de delta é negativo. A equação não possui raizes reais')
+    else:
+        x1 = (-b + d**(1/2)) / (2*a)
+        print(f"x' = {x1}")
+        if d > 0:
+            x2 = (-b - d**(1/2)) / (2*a)
+            print(f"x'' = {x1}")
+
 # 05. Faça um Programa que peça uma data no formato dd/mm/aaaa e determine se a mesma é uma data válida.
 
 dia = int(input('Digite o dia: '))
