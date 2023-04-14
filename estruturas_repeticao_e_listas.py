@@ -32,8 +32,12 @@ jogos = [32,299,199,82,42]
 print(max(jogos))
 print(min(jogos))
 
-'''
-'''
+
+# 04. Escreva um programa em Python que leia um vetor V1 de n posições e gere um vetor V2 de tamanho n que é o vetor V1 invertido.
+v1 = (input('Digite n valores: ')).split()
+print(v1)
+v2 = v1[::-1]
+print(v2)
 
 # 05. Faça um programa que imprima na tela apenas os números ímpares entre 1 e 50.
 
@@ -49,5 +53,15 @@ if num <= 0 or num >= 11:
 else:
     for multi in range(1, 11):
         print(f'{num} x {multi} =', num*multi)
+        
+# 07. Faça um programa que recebe do usuário 10 valores de números inteiros, armazena em um vetor e após percorre-lo exibe qual é o maior valor e a sua posição.
+
+valores = (input('Digite 10 números de inteiros: ')).split()
+for i, valor in enumerate(valores):
+  valores[i] = int(valor)
+  
+print(max(valores))
+print(valores.index(max(valores)))
+       
         
         
