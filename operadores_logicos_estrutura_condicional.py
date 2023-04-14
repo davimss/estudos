@@ -54,7 +54,7 @@ if a != 0:
     else:
         x1 = (-b + d**(1/2)) / (2*a)
         print(f"x' = {x1}")
-        if d > 0:
+        if d == 1:
             x2 = (-b - d**(1/2)) / (2*a)
             print(f"x'' = {x1}")
             
